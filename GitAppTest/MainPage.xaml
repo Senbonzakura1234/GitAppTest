@@ -7,8 +7,55 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <ScrollViewer HorizontalAlignment="Left" VerticalAlignment="Top">
+        <StackPanel Margin="50"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <!--<TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center" Margin="5 0 0 0">Register</TextBlock>-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="300"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
 
-    <Grid>
 
-    </Grid>
+                <TextBox Header="Name (*)" Margin="0 0 5 0" Grid.Row="0" Grid.Column="0" x:Name="Name"/>
+
+                <TextBox Header="Description"  Margin="5 0 0 0" Grid.Row="0" Grid.Column="1" x:Name="Description"/>
+
+                <TextBox Header="Singer" Margin="0 0 5 0" Grid.Row="2" Grid.Column="0" x:Name="Singer"/>
+
+                <TextBox Header="Author" Margin="5 0 0 0" Grid.Row="2" Grid.Column="1" x:Name="Author"/>
+
+                <TextBox Header="Thumbnail" Margin="0 0 5 0" Grid.Row="4" Grid.Column="0" x:Name="Thumbnail"/>
+
+                <TextBox Header="Link" Margin="5 0 0 0" Grid.Row="4" Grid.Column="1" x:Name="Link"/>
+
+
+
+                <TextBlock Margin="15 0 0 0" x:Name="VName" Grid.Row="1" Grid.Column="0"></TextBlock>
+                <TextBlock Margin="15 0 25 0" Grid.Row="1" Grid.Column="1"></TextBlock>
+                <TextBlock Margin="15 0 0 0" Grid.Row="3" Grid.Column="0"></TextBlock>
+                <TextBlock Margin="15 0 25 0" Grid.Row="3" Grid.Column="1"></TextBlock>
+                <TextBlock Margin="15 0 0 0" x:Name="VThumbnail" Grid.Row="5" Grid.Column="0"></TextBlock>
+                <TextBlock Margin="15 0 0 0" x:Name="VLink" Grid.Row="5" Grid.Column="1"></TextBlock>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button  HorizontalAlignment="Stretch" Margin="5 0 0 0" Grid.Row="0" Grid.Column="1" >Upload</Button>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
 </Page>
